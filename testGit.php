@@ -16,7 +16,7 @@
 	<p>Define the following Git related terms:</p>
 	<ul>
 		<li>Version Control Software</li>
-			<p>VCS is</p>
+			<p>VCS is a system that keeps track of changes and modifications to code in a database or file in real time. It allows for multiple peole to be working on a project simultaneously using branches and merging.</p>
 		<li>Add</li>
 			<p>Add is adding the file to the staging area where it will be commited in the next step. This adds more security is you make a mistake by having an extra step to upload.</p>
 		<li>Commit</li>
@@ -24,7 +24,7 @@
 		<li>Push</li>
 			<p>After commiting, you need to push. Pushing is the actual moving of your files onto Github or your VCS.</p>
 		<li>Pull</li>
-			<p></p>
+			<p>Pulling is essentially udating the code on ones local machine. Therefore if others have made changes and pushes them, pulling will update to those changes locally.</p>
 		<li>Clone</li>
 			<p>Cloning is essentially copying work from a git repository and saving it locally.</p>
 	</ul>
