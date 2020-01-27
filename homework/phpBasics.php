@@ -6,9 +6,7 @@
 	$total = $number1 + $number2;
 	$languages = ['PHP', 'HTML', 'JavaScript'];
 ?>
-<script>
 
-</script>
 <!doctype html>
 <html>
 <head>
