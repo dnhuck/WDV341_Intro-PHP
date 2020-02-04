@@ -25,6 +25,15 @@
 	<p><?php echo $total; ?></p>
 	
 	<h2>JS Array using PHP</h2>
+	
+	<script>
+		<?php
+		echo "let name = ['PHP', 'HTML', 'JavaScript'];";
+		echo "for (i=0; i< name.length; i++){document.write(name[i] + '<br>');}";
+		?>
+	</script>
+	
+	<h2>PHP Array</h2>
 	<?php
 		foreach ($languages as $codes){
 		echo $codes . "<br>";
