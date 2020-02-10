@@ -1,33 +1,40 @@
 <?php
-	/*function todaysDate(){
-		//echo "Date Works";
-		$localDate = date("m/d/Y");
-		$internationalDate = date("d/m/Y");
-		echo "Local Date: " . $localDate . "<br>" . "International Date: " .  $internationalDate;
-	}*/
+	function formatDateMDY(){
+		$inDate = date("m" . "/" . "d" . "/" . "Y");
+		echo "<h3>Formated Date: mm/dd/yyyy</h3>";
+		echo $inDate;
+	}
 
-	function exceptDate(){
+	function formatDateDMY(){
+		echo "<h3>Formated Date: dd/mm/yyyy</h3>";
+		$inDate = date("d" . "/" . "m" . "/" . "Y");
+		echo $inDate;
+	}
+
+	function testStringInput(){
+		$stringObject = "      This is a string and it does contain DMACC";
+		echo '<h2>Testing a string input</h3> The string is as follows: "This is a string and it does contain DMACC"<br>         ';
+		echo "The string length is" . " " . strlen($stringObject) . "<br>";
+		echo "Trimmed String: " . trim($stringObject) . "<br>";
+		echo "Lowercase String: " . strtolower($stringObject) . "<br>";
+		echo "Looking for DMACC in the string: ";
 		
+		if (stripos($stringObject, 'DMACC') !== false) {
+    		echo 'true';}
+		
+		function formatNumber(){
+			$inNumber = 1234567890;
+			$formattedNumber = number_format($inNumber, 2);
+			echo "<br>" . "Formatted Number: " . $formattedNumber . "<br>";
+		}
+		
+		function formatNumberCurrency(){
+			$inNumber = 123456;
+			$numberToCurrency = number_format($inNumber, 2);
+			echo "Number formatted to currency: " . "$" . $numberToCurrency;
+			
+		}
 	}
-	
-	/* PRACTICE WITH FUNCTIONS
-	function prompt($promptMessage){
-        echo("<script type='text/javascript'> var answer = prompt('".$promptMessage."');</script>");
-    }
-
-	function sayHello($name = 'shaun', $time = 'morning'){
-		echo "good $time $name </br>";
-	}
-	
-	//sayHello('mario');
-	sayHello('mario', 'night');
-	function formatProduct($product){
-		//echo "{$product['name']} costs {$product['price']} to buy </br>";
-		return "{$product['name']} costs {$product['price']} to buy </br>";
-	};
-	//$formatted = formatProduct(['name'=> 'gold star', 'price' =>20]);
-	//echo $formatted;
-	*/
 ?>
 
 <!doctype html>
@@ -39,17 +46,13 @@
 
 <body>
 	<?php echo "<h1>WDV 341: Intro PHP</h1>"; ?>
-	<?php echo "<h2>Assignment: PHP Function</h2>"; ?>
+	<?php
+	echo "<h2>Assignment: PHP Function</h2>"; 
+	echo formatDateMDY();
+	echo formatDateDMY();
+	echo testStringInput();
+	echo formatNumber();
+	echo formatNumberCurrency();
+	?>
 </body>
 </html>
-
-
-<!-- Create a function that will accept a date input and format it into mm/dd/yyyy format.
-Create a function that will accept a date input and format it into dd/mm/yyyy format to use when working with international dates.
-Create a function that will accept a string input.  It will do the following things to the string:
-Display the number of characters in the string
-Trim any leading or trailing whitespace
-Display the string as all lowercase characters
-Will display whether or not the string contains "DMACC" either upper or lowercase
-Create a function that will accept a number and display it as a formatted number.   Use 1234567890 for your testing.
-Create a function that will accept a number and display it as US currency.  Use 123456 for your testing. -->
