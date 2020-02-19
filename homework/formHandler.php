@@ -9,7 +9,7 @@
         exit;
     }
 
-    $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdFKNoUAAAAACZDlBAnaU8AL1MZzWtwAGKd_BV6&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+    $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
     if($response['success'] == false)
     {
         echo '<h2>You are spammer</h2>';
