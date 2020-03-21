@@ -18,7 +18,7 @@
 		$inProdName = $_POST["prod_name"];
 		$inProdPrice = $_POST["prod_price"];
 		if(isset($_POST["radio"])){ // if radio is checked, store the value
-			$inRadio = $_POST["radio"];
+		$inRadio = $_POST["radio"];
 		}
 		
 		// displayng outputs of values in the form
@@ -80,9 +80,7 @@
   <p>Product Color:	<span><?php echo $prodRadioErrMsg ?></span></p>
 	
   <p>
-    <input type="radio" name="radio" id="prod_red" 
-	<?php if ($inRadio=="prod_red") echo "checked";?>
-	value="prod_red">
+    <input type="radio" name="radio" id="prod_red" <?php if ($inRadio=="prod_red") echo "checked";?> value="prod_red">
     <label for="prod_red">Red Wagon<br></label>
     <input type="radio" name="radio" id="prod_green"
 	<?php if ($inRadio=="prod_green") echo "checked";?>
