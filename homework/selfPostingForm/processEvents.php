@@ -26,11 +26,13 @@ if(isset($_POST["submit"]))
 		// PHP validation goes here
 		
 		if($validForm){
-			// Yes good data - Do database stuff here require('insertEvents.php');
+			
+				require('insertEvents.php');
+			
 			} else{
 			
 			// BAD BAD Data - Display error message, display form to user
-			// 1. bad name 
+			// 1. bad name
 				// put data on the form
 				// put error messege on the form
 					$inEventNameErrMsg = "Invalid Event Name Field";

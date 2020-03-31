@@ -4,3 +4,5 @@ homework/selfPostingForm/formHandler.php
 homework/selfPostingForm/PDOConnection.php
 homework/formPage/PDOConnection.php
 homework/formPage/formHandler.php
+homework/SelectEvents/PDOConnection.php
+homework/SelectOneEvent/PDOConnection.php

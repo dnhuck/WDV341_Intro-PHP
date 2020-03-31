@@ -42,7 +42,7 @@ try{
 	}
 
 	catch(PDOException $e){
-		echo "WARNING WARNING WARNING I HAVE STOLEN YOUR CREDIT CARD!";
+		//echo "WARNING WARNING WARNING I HAVE STOLEN YOUR CREDIT CARD!";
 	}
 
 $conn = null; // close your connection object

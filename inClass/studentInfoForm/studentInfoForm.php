@@ -78,7 +78,7 @@ When the form inputs are valid display a confirmation message to the page instea
 		// PHP validation goes here
 		
 		if($validForm){
-			// Yes good data - Do database stuff here
+			echo "Successfully Submitted!";
 		}
 		else{
 			
