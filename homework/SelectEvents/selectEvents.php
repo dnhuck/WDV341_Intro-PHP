@@ -33,7 +33,8 @@
   
   catch(PDOException $e)
   {
-	  $message = "There has been a problem. The system administrator has been contacted. Please try again later.";
+	  $message = "There has been a problem . Please try again later.";
+	  echo $message;
 
 	  error_log($e->getMessage());			//Delivers a developer defined error message to the PHP log file at c:\xampp/php\logs\php_error_log
 	  error_log($e->getLine());

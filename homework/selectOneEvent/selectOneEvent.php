@@ -15,12 +15,8 @@
 	  $sql .= "event_presenter, ";
 	  $sql .= "event_date, ";
 	  $sql .= "event_time "; //Last column does NOT have a comma after it.
-	  $sql .= "FROM wdv341_event WHERE event_id='64' ";
-		
-		if($sql == "" || $sql == 0){
-			echo 'not found';
-		}
-		
+	  $sql .= "FROM wdv341_event WHERE event_id='2' ";
+	
 	 // $sql .= "SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_events ";
 	  
 	 // filter: WHERE (name) = "value"	
@@ -39,9 +35,10 @@
   {
 	  $message = "There has been a problem. Please try again later.";
 
-	  error_log($e->getMessage());			//Delivers a developer defined error message to the PHP log file at c:\xampp/php\logs\php_error_log
+	  error_log($e->getMessage()); //Delivers a developer defined error message to the PHP log file at c:\xampp/php\logs\php_error_log
 	  error_log($e->getLine());
 	  error_log(var_dump(debug_backtrace()));
+	  echo $message;
   
 	  //Clean up any variables or connections that have been left hanging by this error.		
   
