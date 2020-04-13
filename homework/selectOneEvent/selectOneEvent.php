@@ -8,17 +8,8 @@
 	  $todaysDate = date("Y-m-d");		//use today's date as the default input to the date( )
 	  
 	  //Create the SQL command string
-	  $sql = "SELECT ";
-	  $sql .= "event_id, ";
-	  $sql .= "event_name, ";
-	  $sql .= "event_description, ";
-	  $sql .= "event_presenter, ";
-	  $sql .= "event_date, ";
-	  $sql .= "event_time "; //Last column does NOT have a comma after it.
-	  $sql .= "FROM wdv341_event WHERE event_id='2' ";
-	
-	 // $sql .= "SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_events ";
-	  
+	 $sql = "(SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_event WHERE event_id='2')";
+
 	 // filter: WHERE (name) = "value"	
 	
 	  //PREPARE the SQL statement
@@ -42,7 +33,7 @@
   
 	  //Clean up any variables or connections that have been left hanging by this error.		
   
-	  header('Location: files/505_error_response_page.php');	//sends control to a User friendly page					
+	 // header('Location: files/505_error_response_page.php');	//sends control to a User friendly page					
   }
 
 ?>

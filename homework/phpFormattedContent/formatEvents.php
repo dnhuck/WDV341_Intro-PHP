@@ -8,9 +8,10 @@
 		$todaysDate = date("Y-m-d");		//use today's date as the default input to the date( )
 		
 
-		$sql = "(SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC)UNION 
-		(SELECT DATE_FORMAT(event_date, '%D %M %Y') FROM wdv341_event)";
+		$sql = "(SELECT event_id, event_name, event_description, event_presenter, event_date, event_time, DATE_FORMAT(event_date, '%D %M %Y') AS event_date FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC)";
 		
+
+		// (SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC) UNION 
 	   // filter: WHERE (name) = "value"
 	   // DATE_FORMAT(event_date, '%D %M %Y')
 	   // SELECT * FROM `wdv341_event` WHERE 1	
