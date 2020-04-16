@@ -1,4 +1,7 @@
 <?php
+
+//$currentDate = date("d/m/Y");
+
 	//Get the Event data from the server.
 	try {
 	  
@@ -8,10 +11,10 @@
 		$todaysDate = date("Y-m-d");		//use today's date as the default input to the date( )
 		
 
-		$sql = "(SELECT event_id, event_name, event_description, event_presenter, event_date, event_time, DATE_FORMAT(event_date, '%D %M %Y') AS event_date FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC)";
+		$sql = "(SELECT event_id, event_name, event_description, event_presenter, event_date, DATE_FORMAT(event_date, '%c-%d-%Y') AS event_date, event_time FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC)";
 		
-
 		// (SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC) UNION 
+		// CASE WHEN event_date > $todaysDate then 'yellow' else 'noColor' End as event_name
 	   // filter: WHERE (name) = "value"
 	   // DATE_FORMAT(event_date, '%D %M %Y')
 	   // SELECT * FROM `wdv341_event` WHERE 1	
@@ -39,6 +42,7 @@
 	
 		//header('Location: files/505_error_response_page.php');	//sends control to a User friendly page					
 	}
+	
 
 ?>
 <!DOCTYPE html>
@@ -62,6 +66,10 @@
 		
 		.displayDescription {
 			margin-left:100px;
+		}
+
+		.testClass{
+			color: orange;
 		}
 	</style>
 </head>
@@ -108,12 +116,12 @@
 	
 	<?php
 		}
+		//$eventDate = $sql['event_date'];
 	?>
 
 
 <?php
 	//Close the database connection	
-		
 ?>
 </div>	
 </body>
