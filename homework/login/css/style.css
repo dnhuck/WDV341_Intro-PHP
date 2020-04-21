@@ -1,0 +1,49 @@
+.container{
+    border: 2px solid black;
+    width: 1000px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+#column{
+    display: flex;
+}
+
+#row1{
+    flex: 40%;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#row2{
+    flex: 60%;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.eventBlock{
+        width:500px;
+        margin: auto;
+        text-align: center;
+        background-color:#CCC;	
+        padding: 10px;
+    }
+    
+    .displayEvent{
+        text-align:left;
+        font-size:18px;	
+    }
+    
+    .displayDescription {
+        margin-left:100px;
+    }
+
+#image{
+    width: 50px;
+}

@@ -12,7 +12,8 @@
 		
 
 		$sql = "(SELECT event_id, event_name, event_description, event_presenter, event_date, DATE_FORMAT(event_date, '%c-%d-%Y') AS event_date, event_time FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC)";
-		
+
+	
 		// (SELECT event_id, event_name, event_description, event_presenter, event_date, event_time FROM wdv341_event ORDER BY event_id DESC, event_name DESC, event_description DESC, event_presenter DESC, event_date DESC, event_time DESC) UNION 
 		// CASE WHEN event_date > $todaysDate then 'yellow' else 'noColor' End as event_name
 	   // filter: WHERE (name) = "value"
@@ -27,6 +28,8 @@
 		
 		//Prepared statement result will deliver an associative array
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+		
 	}
 	
 	catch(PDOException $e)
@@ -68,8 +71,13 @@
 			margin-left:100px;
 		}
 
-		.testClass{
-			color: orange;
+		.future{
+			font-style: italic;
+		}
+
+		.currentMonth{
+			font-weight: bold;
+			color: red;
 		}
 	</style>
 </head>
@@ -109,7 +117,20 @@
             </div>
 
             <div>
-            	<span class="displayEvent">Event Date: <?php echo $row['event_date']; ?></span>
+				<span id="displayEvent">Event Date:
+					<?php 
+						if($row['event_date'] > $todaysDate){
+							echo "<span class='future'>" . $row['event_date'] . "</span>";
+						}else{
+							if(){
+								echo "<span class='currentMonth'>" . $row['event_date'] . "</span>";
+							}else{
+								echo $row['event_date'];
+							}
+						}
+
+					?>	
+				</span>
             </div>
         </div>
     </p>
