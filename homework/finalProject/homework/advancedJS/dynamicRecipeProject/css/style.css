@@ -1,0 +1,84 @@
+/* CSS Document for Ryan's Recipes */
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; }
+
+.row {
+  display: flex; }
+
+.column {
+  flex: 50%; }
+
+img {
+  border: 2px solid black; }
+
+body {
+  background-color: white; }
+
+heading div.row:nth-of-type(1) {
+  background-color: gainsboro;
+  padding: 4px 0px 4px 10px; }
+  heading div.row:nth-of-type(1) h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 70px; }
+  heading div.row:nth-of-type(1) .column:nth-of-type(1) {
+    flex: 30%; }
+    heading div.row:nth-of-type(1) .column:nth-of-type(1) img {
+      border-radius: 100%;
+      width: 25%;
+      margin: auto; }
+  heading div.row:nth-of-type(1) .column:nth-of-type(2) {
+    flex: 70%; }
+heading div.row:nth-of-type(2) {
+  background-color: gray; }
+heading div.row:nth-of-type(2) h3 {
+  font-size: 50px;
+  margin: 10px 0px 10px 10px; }
+heading div.row:nth-of-type(2) div:nth-of-type(2) label {
+  font-size: 20px; }
+heading div.row:nth-of-type(2) div:nth-of-type(2) div {
+  padding-top: 2px; }
+
+div#recipe1 div:nth-of-type(2) img {
+  margin: auto;
+  width: 70%; }
+div#recipe1 div.row div:nth-last-of-type(2) {
+  font-size: 25px; }
+div#recipe1 div:nth-of-type(1) span {
+  color: #BED649;
+  text-transform: uppercase; }
+div#recipe1 .row {
+  background-color: gainsboro;
+  padding: 5px; }
+
+div#recipe2 div:nth-of-type(2) img {
+  margin: auto;
+  width: 70%; }
+div#recipe2 div.row div:nth-last-of-type(2) {
+  font-size: 25px; }
+div#recipe2 div:nth-of-type(1) span {
+  color: green;
+  text-transform: uppercase; }
+div#recipe2 .row {
+  background-color: gainsboro;
+  padding: 5px; }
+
+div#recipe3 div:nth-of-type(2) img {
+  margin: auto;
+  width: 70%; }
+div#recipe3 div.row div:nth-last-of-type(2) {
+  font-size: 25px; }
+div#recipe3 div:nth-of-type(1) span {
+  color: red;
+  text-transform: uppercase; }
+div#recipe3 .row {
+  background-color: gainsboro;
+  padding: 5px; }
+
+footer {
+  text-align: center;
+  background-color: gainsboro; }
+
+/*# sourceMappingURL=style.css.map */

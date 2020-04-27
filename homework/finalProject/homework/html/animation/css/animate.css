@@ -1,0 +1,68 @@
+/* Scss Document */
+#city {
+  width: 500px; }
+
+#example1 {
+  width: 5px;
+  height: 5px;
+  animation: LED 1s alternate infinite;
+  border-radius: 100%;
+  position: absolute;
+  top: 187px;
+  left: 390px; }
+
+@keyframes LED {
+  0% {
+    background-color: none; }
+  100% {
+    background-color: red;
+    transform: scale(1.2, 1.2); } }
+#stopSign {
+  width: 60px;
+  position: relative;
+  left: 200px; }
+
+@keyframes drive {
+  0% {
+    transform: translateX(0px); }
+  80% {
+    transition-duration: 1s;
+    transform: translateX(-800px); }
+  100% {
+    transform: translateX(-1500px); } }
+#car {
+  width: 300px;
+  animation: drive 5s infinite;
+  position: absolute;
+  left: 1000px;
+  top: 490px; }
+
+#light {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin-top: 40px;
+  animation: ledLight 8s infinite; }
+  #light p {
+    text-align: center; }
+
+@keyframes ledLight {
+  0% {
+    background-color: red;
+    transform: rotateY(0deg); }
+  16% {
+    background-color: orange;
+    transform: rotateY(180deg); }
+  32% {
+    background-color: yellow; }
+  48% {
+    background-color: green; }
+  64% {
+    background-color: blue; }
+  80% {
+    background-color: indigo; }
+  100% {
+    background-color: violet; } }
+
+/*# sourceMappingURL=animate.css.map */

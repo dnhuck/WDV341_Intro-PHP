@@ -1,0 +1,56 @@
+/*
+Classic Taxi Layout
+By: David Huck
+Used on /taxi
+*/
+
+
+body{
+	background-color: white;
+	font-family: sans-serif;
+}
+
+/* Heading Styles */
+h1{
+	background-color: orange;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	word-spacing: .5em;
+	letter-spacing: .2em;
+	text-align: center;
+}
+
+
+h2{
+	background-color: chocolate;
+	color: white;
+	
+}
+
+/* Links */
+a {
+	color: orange;
+	font-size: 1.5em;
+	text-decoration: none;
+	
+}
+
+
+/* Parahraphs */
+p{
+	text-indent: 3em;
+	line-height: 1.5em;
+	
+	
+}
+
+/* Footer */
+footer{
+	background-color: orange; 
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+

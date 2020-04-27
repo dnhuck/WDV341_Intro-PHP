@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ryans Recipes</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<link href="css/style.scss" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/ryanRecipe.js"></script>
+</head>
+
+<body>
+	<heading>
+		<div class="row">
+			<div class="column">
+				<img src="images/logo.jpg" alt="logo" name="logo">
+			</div>
+			
+			<div class="column">
+				<h1>Ryan's Recipes</h1>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="column">
+				<h3>Select Recipe</h3>
+			</div>
+			
+			<div class="column">
+				<div id="recipeSelect">
+					
+					<div>
+						<input type="radio" name="selectRecipe" id="firstRecipe">
+						<label for="firstRecipe">Crockpot Chilli</label>
+					</div>
+					
+					<div>
+						<input type="radio" name="selectRecipe" id="secondRecipe">
+						<label for="secondRecipe">ButterScotch Pie</label>
+					</div>
+					
+					<div>
+						<input type="radio" name="selectRecipe" id="thirdRecipe">
+						<label for="thirdRecipe">Baked Macaroni</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</heading>
+		
+	<div id="recipe1">
+		<div class="row">
+			<div class="column">
+				<h1>Crockpot Chilli</h1>
+				<h3>Number of Servings: 6</h3>
+				<h3>Preperation Time: 26 Minutes</h3>
+				<h3>Cook Time: 6 Hours</h3>
+				<h3>Difficulty: <span>Intermediate</span></h3>
+			</div>
+			<div class="column">
+				<img src="images/crockpotChilli.png" alt="Chilli" name="chilli">
+				<div id="quantity">
+							
+				<label for="normalSize">Normal Serving</label>
+				<input type="radio" name="selectSize" class="normalSize" id="normalSize" checked>
+							
+				<label for="halfSize">1/2 Serving</label>
+				<input type="radio" name="selectSize" class="halfSize" id="halfSize">
+								
+				<label for="doubleSize">Double Serving</label>
+				<input type="radio" name="selectSize" class="doubleSize" id="doubleSize">
+				</div>
+			</div>
+		</div>
+		<button class="showIn">Show/ Hide Ingredients</button>
+		
+		<div class="1ingredients">
+			<h3>Ingredients:</h3>
+			
+			<ul class="halfSizePick">
+				<li>1 tbsp. Cooking Oil<input type="checkbox"></li>
+				<li>1/2 Cup Onion<input type="checkbox"></li>
+				<li>1/2 Cup Chopped Peppers<input type="checkbox"></li>
+				<li>2 tbsp. Chilli Powder<input type="checkbox"></li>
+				<li>1/2 tsp. Hot Chilli Powder<input type="checkbox"></li>
+				<li>1/2 lb Ground Beef or Chicken<input type="checkbox"></li>
+				<li>1 Cans Red Beans<input type="checkbox"></li>
+				<li>1 Cans Tomato Sauce<input type="checkbox"></li>
+				<li>1/2 Cup Shredded Cheese (Optional)<input type="checkbox"></li>
+				<li>1/4 Cup Soucr Cream (Optional)<input type="checkbox"></li>
+			</ul>
+			
+			
+			<ul class="normalSizePick">
+				<li>2 tbsp. Cooking Oil<input type="checkbox"></li>
+				<li>1 Cup Onion<input type="checkbox"></li>
+				<li>1 Cup Chopped Peppers<input type="checkbox"></li>
+				<li>4 tbsp. Chilli Powder<input type="checkbox"></li>
+				<li>1 tsp. Hot Chilli Powder<input type="checkbox"></li>
+				<li>1 lb Ground Beef or Chicken<input type="checkbox"></li>
+				<li>2 Cans Red Beans<input type="checkbox"></li>
+				<li>2 Cans Tomato Sauce<input type="checkbox"></li>
+				<li>1 Cup Shredded Cheese (Optional)<input type="checkbox"></li>
+				<li>1/2 Cup Soucr Cream (Optional)<input type="checkbox"></li>
+			</ul>
+			
+			<ul class="doubleSizePick">
+				<li>4 tbsp. Cooking Oil<input type="checkbox"></li>
+				<li>2 Cup Onion<input type="checkbox"></li>
+				<li>2 Cup Chopped Peppers<input type="checkbox"></li>
+				<li>8 tbsp. Chilli Powder<input type="checkbox"></li>
+				<li>2 tsp. Hot Chilli Powder<input type="checkbox"></li>
+				<li>2 lb Ground Beef or Chicken<input type="checkbox"></li>
+				<li>4 Cans Red Beans<input type="checkbox"></li>
+				<li>4 Cans Tomato Sauce<input type="checkbox"></li>
+				<li>1 Cup Shredded Cheese (Optional)<input type="checkbox"></li>
+				<li>1 Cup Soucr Cream (Optional)<input type="checkbox"></li>
+			</ul>
+		</div>
+		
+		<button class="toggleIns">Show/ Hide Instructions</button>
+		<div class="instructions">
+			<div class="1instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Heat cooking oil in 1 quart skillet.</li>
+					<li>Saute onions and peppers for 10 minutes.</li>
+					<li>Add spices and stir for 15 seconds.</li>
+					<li>Add meat and cook until browned. Approximately 7.5 minutes.</li>
+					<li>Pour contents of skillet into 1.5 quart crock pot.</li>
+					<li>Rinse beans and place in crockpot.</li>
+					<li>Open and pour Tomato puree and sauce into crock pot.</li>
+					<li>Cover crockpot and cook on low for 3 hours.</li>
+					<li>Serve into individual bowls and top with sour cream and cheese.</li>
+				</ul>
+			</div>
+
+			<div class="2instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Heat cooking oil in 2 quart skillet.</li>
+					<li>Saute onions and peppers for 5 minutes.</li>
+					<li>Add spices and stir for 30 seconds.</li>
+					<li>Add meat and cook until browned. Approximately 15 minutes.</li>
+					<li>Pour contents of skillet into 3 quart crock pot.</li>
+					<li>Rinse beans and place in crockpot.</li>
+					<li>Open and pour Tomato puree and sauce into crock pot.</li>
+					<li>Cover crockpot and cook on low for 6 hours.</li>
+					<li>Serve into individual bowls and top with sour cream and cheese.</li>
+				</ul>
+			</div>
+
+			<div class="3instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Heat cooking oil in 4 quart skillet.</li>
+					<li>Saute onions and peppers for 10 minutes.</li>
+					<li>Add spices and stir for 60 seconds.</li>
+					<li>Add meat and cook until browned. Approximately 30 minutes.</li>
+					<li>Pour contents of skillet into 6 quart crock pot.</li>
+					<li>Rinse beans and place in crockpot.</li>
+					<li>Open and pour Tomato puree and sauce into crock pot.</li>
+					<li>Cover crockpot and cook on low for 12 hours.</li>
+					<li>Serve into individual bowls and top with sour cream and cheese.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="recipe2">
+		<div class="row">
+			<div class="column">
+				<h1>ButterScotch Pie</h1>
+				<h3>Number of Servings: 4</h3>
+				<h3>Preperation Time: 25 Minutes</h3>
+				<h3>Cook Time: 35 Minutes</h3>
+				<h3>Difficulty: <span>Beginner</span></h3>
+			</div>
+			<div class="column">
+				<img src="images/pie.jpg" alt="butterscotch pie" name="butterscotch pie">
+				<div class="quantity">
+				
+					<label for="normalSize2">Normal Serving</label>
+					<input type="radio" name="selectSize" id="normalSize2" class="normalSize" checked>
+
+					<label for="halfSize2">1/2 Serving</label>
+					<input type="radio" name="selectSize" id="halfSize2" class="halfSize">
+
+					<label for="doubleSize2">Double Serving</label>
+					<input type="radio" name="selectSize" id="doubleSize2" class="doubleSize">
+				</div>
+			</div>
+		</div>
+		<button class="showIn">Show/ Hide Ingredients</button>
+		
+		<div class="1ingredients">
+			<h3>Ingredients:</h3>
+			
+			<ul class="halfSizePick">
+				<li>1/2 cup packed light brown sugar<input type="checkbox"></li>
+				<li>2 tablespoons cornstarch<input type="checkbox"></li>
+				<li>1/4 teaspoon salt<input type="checkbox"></li>
+				<li>1 cup milk<input type="checkbox"></li>
+				<li>1 egg yolks, beaten<input type="checkbox"></li>
+				<li>1/2 tablespoon butter<input type="checkbox"></li>
+				<li>1/2 teaspoon vanilla extract<input type="checkbox"></li>
+				<li>1 (4 inch) pie crust, baked<input type="checkbox"></li>
+			</ul>
+			
+			
+			<ul class="normalSizePick">
+				<li>1 cup packed light brown sugar<input type="checkbox"></li>
+				<li>4 tablespoons cornstarch<input type="checkbox"></li>
+				<li>1/2 teaspoon salt<input type="checkbox"></li>
+				<li>2 cups milk<input type="checkbox"></li>
+				<li>2 egg yolks, beaten<input type="checkbox"></li>
+				<li>1 tablespoon butter<input type="checkbox"></li>
+				<li>1 teaspoon vanilla extract<input type="checkbox"></li>
+				<li>1 (9 inch) pie crust, baked<input type="checkbox"></li>
+			</ul>
+			
+			<ul class="doubleSizePick">
+				<li>2 cup packed light brown sugar<input type="checkbox"></li>
+				<li>8 tablespoons cornstarch<input type="checkbox"></li>
+				<li>2 teaspoon salt<input type="checkbox"></li>
+				<li>4 cups milk<input type="checkbox"></li>
+				<li>4 egg yolks, beaten<input type="checkbox"></li>
+				<li>2 tablespoon butter<input type="checkbox"></li>
+				<li>2 teaspoon vanilla extract<input type="checkbox"></li>
+				<li>2 (9 inch) pie crust, baked<input type="checkbox"></li>
+			</ul>
+		</div>
+		
+		<button class="toggleIns">Show/ Hide Instructions</button>
+
+		<div class="instructions">
+			<div class="1instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>In top of double boiler, combine brown sugar, cornstarch, salt and milk. Cook, stirring constantly, until mixture starts to thicken, about 10 minutes.</li>
+					<li>Whisk in egg yolks; continue to cook and stir until filling is thickened.</li>
+					<li>While pudding mixture is cooking, preheat the oven to 400 degrees F (200 degrees C).</li>
+					<li>Remove filling from heat, and stir in butter and vanilla.</li>
+					<li>Pour filling into prepared pie crust. Bake in preheated oven until top begins to brown, about 2.5 minutes.</li>
+				</ul>
+			</div>
+
+			<div class="2instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>In top of double boiler, combine brown sugar, cornstarch, salt and milk. Cook, stirring constantly, until mixture starts to thicken, about 20 minutes.</li>
+					<li>Whisk in egg yolks; continue to cook and stir until filling is thickened.</li>
+					<li>While pudding mixture is cooking, preheat the oven to 400 degrees F (200 degrees C).</li>
+					<li>Remove filling from heat, and stir in butter and vanilla.</li>
+					<li>Pour filling into prepared pie crust. Bake in preheated oven until top begins to brown, about 5 minutes.</li>
+				</ul>
+			</div>
+
+			<div class="3instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>In top of double boiler, combine brown sugar, cornstarch, salt and milk. Cook, stirring constantly, until mixture starts to thicken, about 40 minutes.</li>
+					<li>Whisk in egg yolks; continue to cook and stir until filling is thickened.</li>
+					<li>While pudding mixture is cooking, preheat the oven to 400 degrees F (200 degrees C).</li>
+					<li>Remove filling from heat, and stir in butter and vanilla.</li>
+					<li>Pour filling into prepared pie crust. Bake in preheated oven until top begins to brown, about 10 minutes.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="recipe3">
+		<div class="row">
+			<div class="column">
+				<h1>Baked Macaroni</h1>
+				<h3>Number of Servings: 3</h3>
+				<h3>Preperation Time: 20 Minutes</h3>
+				<h3>Cook Time: 30 Minutes</h3>
+				<h3>Difficulty: <span>Advanced</span></h3>
+			</div>
+			<div class="column">
+				<img src="images/bakedMacAndCheese.jpg" alt="Baked Macaroni" name="baked Macaroni">
+				<div class="quantity">
+				
+					<label for="normalSize3">Normal Serving</label>
+					<input type="radio" name="selectSize" id="normalSize3" class="normalSize" checked>
+
+					<label for="halfSize3">1/2 Serving</label>
+					<input type="radio" name="selectSize" id="halfSize3" class="halfSize">
+
+					<label for="doubleSize3">Double Serving</label>
+					<input type="radio" name="selectSize" id="doubleSize3" class="doubleSize">
+				
+				</div>
+			</div>
+		</div>
+		<button class="showIn">Show/ Hide Ingredients</button>
+		
+		<div class="1ingredients">
+			<h3>Ingredients:</h3>
+			
+			<ul class="halfSizePick">
+				<li>1 (6 ounce) package macaroni<input type="checkbox"></li>
+				<li>1/2 Egg<input type="checkbox"></li>
+				<li>1 Cups Milk<input type="checkbox"></li>
+				<li>1 tablespoons butter, melted<input type="checkbox"></li>
+				<li>1 1/4 cups shredded Cheddar cheese<input type="checkbox"></li>
+				<li>salt and pepper to taste<input type="checkbox"></li>
+			</ul>
+			
+			
+			<ul class="normalSizePick">
+				<li>1 (12 ounce) package macaroni<input type="checkbox"></li>
+				<li>1 Egg<input type="checkbox"></li>
+				<li>2 Cups Milk<input type="checkbox"></li>
+				<li>2 tablespoons butter, melted<input type="checkbox"></li>
+				<li>2 1/2 cups shredded Cheddar cheese<input type="checkbox"></li>
+				<li>salt and pepper to taste<input type="checkbox"></li>
+			</ul>
+			
+			<ul class="doubleSizePick">
+				<li>2 (12 ounce) package macaroni<input type="checkbox"></li>
+				<li>2 Eggs<input type="checkbox"></li>
+				<li>4 Cups Milk<input type="checkbox"></li>
+				<li>4 tablespoons butter, melted<input type="checkbox"></li>
+				<li>5 cups shredded Cheddar cheese<input type="checkbox"></li>
+				<li>salt and pepper to taste<input type="checkbox"></li>
+			</ul>
+		</div>
+		
+		<button class="toggleIns">Show/ Hide Instructions</button>
+		<div class="instructions">
+			<div class="1instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Preheat the oven to 350 degrees F (175 degrees C). Lightly grease a 1-quart baking dish.</li>
+					<li>In a large pot of salted water, lightly boil the macaroni for about 2.5 minutes until half-cooked.</li>
+					<li>Whisk the egg and milk together in a large cup. Add butter and cheese to the egg and milk. Stir well.</li>
+					<li>Place the lightly cooked macaroni in the prepared baking dish. Pour the egg and cheese liquid over the macaroni, sprinkle with salt and pepper, and stir well. Press the mixture evenly around the baking dish.</li>
+					<li>Bake uncovered, for 15 to 20 minutes, or until the top is brown.</li>
+				</ul>
+			</div>
+
+			<div class="2instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Preheat the oven to 350 degrees F (175 degrees C). Lightly grease a 2-quart baking dish.</li>
+					<li>In a large pot of salted water, lightly boil the macaroni for about 5 minutes until half-cooked.</li>
+					<li>Whisk the egg and milk together in a large cup. Add butter and cheese to the egg and milk. Stir well.</li>
+					<li>Place the lightly cooked macaroni in the prepared baking dish. Pour the egg and cheese liquid over the macaroni, sprinkle with salt and pepper, and stir well. Press the mixture evenly around the baking dish.</li>
+					<li>Bake uncovered, for 30 to 40 minutes, or until the top is brown.</li>
+				</ul>
+			</div>
+
+			<div class="3instructions">
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Preheat the oven to 350 degrees F (175 degrees C). Lightly grease a 2-quart baking dish.</li>
+					<li>In a large pot of salted water, lightly boil the macaroni for about 10 minutes until half-cooked.</li>
+					<li>Whisk the egg and milk together in a large cup. Add butter and cheese to the egg and milk. Stir well.</li>
+					<li>Place the lightly cooked macaroni in the prepared baking dish. Pour the egg and cheese liquid over the macaroni, sprinkle with salt and pepper, and stir well. Press the mixture evenly around the baking dish.</li>
+					<li>Bake uncovered, for 60 to 80 minutes, or until the top is brown.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<span></span>
+	</footer>
+</body>
+</html>

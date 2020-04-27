@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>products.html</title>
+  </head>
+  <body>
+    <h1>This is the Products Page</h1>
+    <p>1. Place the image called books.jpg on this page following this
+      paragraph. </p> <img src="images/books.jpg" alt="books">
+    <p>2. Create a hyperlink that will return the user to the home page of this
+      site. Place the link in a paragraph following this one.</p>
+   <p>
+    <a href="index.html">Home</a> 
+    </p> 
+    <p>2. Create a hyperlink that will take the user to the academics page of
+      this site. Place the link in a paragraph following this one.</p>
+    <p>
+      <a href="academics">Academics</a>
+    </p>
+  </body>
+</html>

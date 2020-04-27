@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="js/validate.js"></script>
+<title>Contact</title>
+<link href="css/websiteStyleSheet.css" rel="stylesheet" type="text/css">
+<link href="scss/websiteStyleSheet.scss" rel="stylesheet" type="text/scss">
+<link href="css/contact.css" rel="stylesheet" type="text/css">
+<link href="scss/contact.scss" rel="stylesheet" type="text/scss">
+</head>
+
+<body>
+	<header id="header">
+		<div class="row">
+			<div class="column1">
+				<img src="images/portfolioImage.jpg" alt="David Huck" id="portfolioImage">
+			</div>
+			<div class="column2">
+				<h1>David Huck | Web Developer</h1>
+				
+				<nav id="nav">
+					<ul id="navUl">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="homeWork.html">Homework</a></li>
+						<li><a href="photography.php">Photography</a></li>
+						<li><a href="contact.html">Contact Me</a></li>
+						<li><a href="login.php">Log In</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+		<h2 class="heading">Contact Me</h2>
+	
+		<form action="contact.php" method="post">
+			<fieldset>
+				<legend>Contact Form</legend>
+				<div id="form">
+					<p>First Name:</p>
+					<input type="text" name="firstName" id="firstName" autocomplete="on" class="name" required>
+					<p>Last Name:</p>
+					<input type="text" name="lastName" id="lastName" autocomplete="on" class="name" required>
+					<p>Email:</p>
+					<input type="email" name="email" id="email" autocomplete="on" class="email" required>
+					<p>Leave Me a Message:</p>
+					<input type="text" name="message" id="message" autocomplete="off" class="message" required>
+					<div id="buttons">
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	
+	<h2 id="linkHeader">My Links:</h2>
+	<ul id="links">
+		<li><a href="https://www.facebook.com/profile.php?id=100009059158931" target="_blank">Facebook</a></li>
+		<li><a href="https://www.instagram.com/david_huck_/?hl=en" target="_blank">Instagram</a></li>
+		<li><a href="https://github.com/dnhuck" target="_blank">Github</a></li>
+		<li><a href="https://www.linkedin.com/in/david-huck-332558170/" target="_blank">LinkedIn</a></li>
+	</ul>
+		
+	<footer>
+		<div class="row">
+			<div class="column5">
+				<h3>Contact Me:</h3>
+				<ul>
+					<li>Email: Davidhuck08@gmail.com</li>
+					<li>Phone: 417-559-9451</li>
+					<li>Des Moines, IA</li>
+				</ul>
+			</div>
+			
+			<div class="column6">
+				<h3>Social Media</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=100009059158931" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/david_huck_/?hl=en" target="_blank">Instagram</a></li>
+					<li><a href="https://github.com/dnhuck" target="_blank">Github</a></li>
+					<li><a href="https://www.linkedin.com/in/david-huck-332558170/" target="_blank">LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+		<h4>&copy;Copywrite<span id="copywriteYear"></span></h4>
+	</footer>
+	<script src="js/copywriteYear.js"></script>
+</body>
+</html>

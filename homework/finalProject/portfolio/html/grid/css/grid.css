@@ -1,0 +1,259 @@
+/* CSS Document */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+#container {
+  background-color: white;
+  width: 1020px;
+  border: 2px solid black;
+  margin: auto; }
+
+header h1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  top: 50px;
+  left: 20px;
+  padding: 30px 0px 50px 55px; }
+  header h1 img {
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+    border: 2px solid black; }
+
+.myGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+nav {
+  background-color: black; }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 220px;
+    padding: 25px 0; }
+  nav ul li {
+    list-style-type: none; }
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; }
+
+body {
+  background-color: white; }
+  body section.leftSide {
+    display: grid;
+    padding: 0 25px;
+    padding-top: 20px;
+    background-color: white;
+    width: 100%; }
+    body section.leftSide .imageGallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px; }
+    body section.leftSide .imageGallery img {
+      width: 100%;
+      height: 150px;
+      border: 2px solid black; }
+    body section.leftSide div p img {
+      width: 100%;
+      margin-bottom: 7px;
+      border: 2px solid black; }
+  body section.rightSide {
+    background-color: white;
+    width: 100%;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 28px; }
+    body section.rightSide h3 {
+      text-align: center; }
+    body section.rightSide div:nth-of-type(1) {
+      column-count: 2;
+      padding: 16px; }
+    body section.rightSide form {
+      width: 95%;
+      border: 2px solid black;
+      margin: auto;
+      background-color: lightgray; }
+      body section.rightSide form h2 {
+        position: relative;
+        top: 10px;
+        left: 10px; }
+      body section.rightSide form div {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 10px; }
+      body section.rightSide form #floatName, body section.rightSide form #floatEmail {
+        height: 40px;
+        width: 95%; }
+      body section.rightSide form #floatMessage {
+        height: 120px;
+        width: 95%; }
+      body section.rightSide form #nameName, body section.rightSide form #nameEmail {
+        margin-left: 30px;
+        margin-top: 10px; }
+      body section.rightSide form #nameMessage {
+        position: relative;
+        top: 45px;
+        left: 4px; }
+      body section.rightSide form #button {
+        margin-left: 22%; }
+      body section.rightSide form #button2 {
+        margin-left: 7%; }
+      body section.rightSide form #button, body section.rightSide form #button2 {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        width: 15%; }
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 35px 5px;
+  display: grid;
+  grid-template-columns: 15fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 15px; }
+  footer h1 {
+    margin-left: 5%; }
+  footer img {
+    width: 50px; }
+  footer img:nth-of-type(1) {
+    border-radius: 15px; }
+  footer img:nth-of-type(2) {
+    border-radius: px; }
+  footer img:nth-of-type(3) {
+    border-radius: 50%; }
+
+@media screen and (max-width: 375px) {
+  #container {
+    width: 375px;
+    margin: auto; }
+
+  header h1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    top: 50px;
+    left: 20px; }
+    header h1 img {
+      width: 80%;
+      right: 40px;
+      border: 2px solid black; }
+
+  .myGrid {
+    display: grid;
+    grid-template-columns: 1fr; }
+
+  nav {
+    background-color: black; }
+    nav ul {
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      margin-left: 0px; }
+    nav ul li {
+      list-style-type: none;
+      font-size: 20px;
+      text-align: left;
+      margin: auto; }
+    nav ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white; }
+
+  section.leftSide {
+    display: grid;
+    padding-top: 20px;
+    background-color: white;
+    width: 100%;
+    margin: auto; }
+    section.leftSide .imageGallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 5px; }
+    section.leftSide .imageGallery img {
+      width: 30%;
+      height: 120px;
+      border: 2px solid black; }
+    section.leftSide div p img {
+      width: 50%;
+      margin-bottom: 7px;
+      border: 2px solid black; }
+
+  section.rightSide {
+    background-color: white;
+    padding-right: 0px;
+    width: 100%;
+    margin: auto; }
+    section.rightSide h3 {
+      text-align: center; }
+    section.rightSide div:nth-of-type(1) {
+      column-count: 2;
+      padding-right: 0px;
+      margin: auto; }
+    section.rightSide form {
+      width: 95%;
+      border: 2px solid black;
+      margin: auto;
+      background-color: lightgray;
+      margin-left: 5px; }
+      section.rightSide form h2 {
+        position: relative;
+        top: 10px;
+        left: 10px; }
+      section.rightSide form div {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 10px; }
+      section.rightSide form #floatName, section.rightSide form #floatEmail {
+        height: 40px;
+        width: 95%; }
+      section.rightSide form #floatMessage {
+        height: 80px;
+        width: 90%; }
+      section.rightSide form #nameName, section.rightSide form #nameEmail {
+        margin-left: 30px;
+        margin-top: 10px; }
+      section.rightSide form #nameMessage {
+        position: relative;
+        top: 45px;
+        left: 4px; }
+      section.rightSide form #button {
+        margin-left: 22%; }
+      section.rightSide form #button2 {
+        margin-left: 7%; }
+      section.rightSide form #button, section.rightSide form #button2 {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        width: 30%; }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 35px 5px;
+    display: grid;
+    grid-template-columns: 15fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 15px; }
+    footer h1 {
+      margin-left: 5%; }
+    footer img {
+      width: 50px; }
+    footer img:nth-of-type(1) {
+      border-radius: 15px; }
+    footer img:nth-of-type(2) {
+      border-radius: px; }
+    footer img:nth-of-type(3) {
+      border-radius: 50%; } }
+
+/*# sourceMappingURL=grid.css.map */

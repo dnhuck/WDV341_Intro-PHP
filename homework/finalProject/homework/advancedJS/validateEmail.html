@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Validate Email</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		
+		let submitButton = document.querySelector("#submit");
+		
+		let emailValue = submitButton.addEventListener("click",function(){
+			let emailValue = document.querySelector("#getEmail").value;
+		console.log(emailValue);
+			
+		let validation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		
+		if(validation.test(emailValue)){
+				$("#result").html(emailValue + ' Is True');
+				$("#result").css("color", 'green');
+			}
+			else{
+				$("#result").html(emailValue + ' Is False');
+				$("#result").css("color", 'red');
+			}
+		});
+		
+	}); 
+	
+</script>
+</head>
+
+<body>
+	<h1>WDV321: Advanced JavaScript</h1>
+	<h2>Validating Email Address</h2>
+	
+	<form action="#" method="post">
+		<p>
+			<label for="email">Enter Email:</label>
+			<input type="email" id="getEmail" name="email">
+		</p>
+				
+		<p>
+			<input type="button" value="Test The Email" id="submit">
+		</p>
+		
+		<p id="result"></p>
+		
+	</form>
+	
+</body>
+</html>
+
+<!--
+Use Javascript or JQuery to create a function that will validate the format of an email address.
+
+The function should accept an input (the email address) and return true if valid and false if invalid.
+-->

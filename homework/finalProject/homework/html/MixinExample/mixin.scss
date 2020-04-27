@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+@mixin h1Background($color, $brcolor){
+	
+	color: $color;
+	background-color: $brcolor;
+}
+	
+h1{
+	
+	@include h1Background(red, yellow)
+	
+	
+}	
+
+h3{
+	
+	@include h1Background(blue, orange)
+	
+}

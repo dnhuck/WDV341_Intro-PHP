@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript Exam 1 Lab</title>
+<link type="text/css" rel="stylesheet" href="css/floatFormat.css">
+<script type="text/javascript" src="js/date.js">
+	
+	
+	/*
+
+		Exam 1 Lab Instructions
+		1. Display today's date next to "Today is: " in the Header.  It should look like:  Monday, April 1, 2018 -------------------------- DONE
+		2. Create a global variable called customerName. It should contain "Please Sign In". Display the value of the customerName variable next to "Hello " in the Header. -------- DONE
+		3. Create a function for the Sign In button.  The function will use a prompt to ask the user for their name. Capture their name in the customerName variable. Change the value displayed next to "Hello " in the Header with the new value of customerName in all uppercase letters. 		
+		4. Apply the enlargeImage() and originalSizeImage() functions to the CSS and JS images in the Image Gallery. ---------------------------- DONE
+		5. Create a function that will change the background color of the body to the selected color. Apply this function to the radio buttons.  The function will expect the selected color to be passed in as a parameter to the function. ----------------------------- DONE			
+		6. Display the current year after the copyright symbol in the Footer of the page. --------------------------DONE
+		
+		General instructions and Extra Credit:
+		
+		For best results and the most points all functions should be in an external javascript file.
+		For best results and the most points use the addEventListener() to assign event handlers.
+		For best results and the most points write well organized and laid out javascript using the concepts learned in class.
+		For best results and the most points use the .innerHTML property.		
+*/
+</script>
+	
+<script type="text/javascript" src="js/problemTwo.js"></script>
+	
+<style>
+	footer span	{
+		display:inline-block;
+		width:50%;
+		color:white;
+		font-size:small;
+		text-align:center;
+	}
+	
+	nav div p	{
+		text-align:right;
+		color:white;
+		padding-right:20px;
+	}
+	
+	nav div button	{
+		margin-right:20px;
+		margin-left:20px;	
+	}
+	
+</style>
+
+<script> 
+	
+	function enlargeImage(inImage)	{
+		//alert("inside enlargeImage()" );
+		document.getElementById("picHTML5").style.transform = "scale(2,2)";
+	}
+	
+	function originalSizeImage(inImage)	{
+		//alert("inside originalSizeImage()");	
+		document.getElementById("picHTML5").style.transform = "scale(1,1)";	
+	}
+	
+</script>
+</head>
+
+<body id="body">
+
+	<div id="container">
+
+		<header>
+        	<h1><img src="images/headerImage.png">WebAppCo</h1>
+        </header>
+
+		<nav>
+        	<h1>MENU/NAVIGATION</h1>
+            <div>
+            	<p>Today is: <span><script>document.write(getCurrentDayOfWeek() + " , " + getCurrentMonthName() + " " + dayNum + " , " + fullYear)</script>
+				</span> 
+				<button onClick="userSignIn()">Sign in!</button> 
+				<span id="displayName"> Hello<script>document.write(customerName);</script></span></p>
+            </div>
+        </nav>
+		<script type="text/javascript" src="js/problemThree.js"> alert(signIn(); )</script>
+		<div class="clearfix">
+            <section >
+            	<div>
+					<script src="js/problem4.js"></script>
+           	  		<p><img src="images/wdvLarge.png"></p>
+            	<div class="imageGallery">
+                	<img src="images/html5.png" id="picHTML5" onMouseOver="enlargeImage('picHTML5')" onMouseOut="originalSizeImage('picHTML5')"> <!-- done -->
+                    <img src="images/css3.png" id="piccss3" onMouseOver="EnlargeImage1('piccss3')" onMouseOut="OriginalSizeImage1('piccss3')"> <!-- done -->
+                    <img src="images/javascript.png" id="picJS" onMouseOver="EnlargeImage2('picJS')" onMouseOut="OriginalSizeImage2('picJS')"> <!-- done -->
+                    <img src="images/jquery.png" id="picJQ" onMouseOver="EnlargeImage3('picJQ')" onMouseOut="OriginalSizeImage3('picJQ')"> <!-- done -->
+                    <img src="images/php.jpg" id="picPHP" onMouseOver="EnlargeImage4('picPHP')" onMouseOut="OriginalSizeImage4('picPHP')"> <!-- done -->
+                    <img src="images/mysql.jpg" id="picSQL" onMouseOver="EnlargeImage5('picSQL')" onMouseOut="OriginalSizeImage5('picSQL')"> <!-- done -->
+                    <img src="images/wordpress.jpg" id="picWORDPRESS" onMouseOver="EnlargeImage('picWORDPRESS')" onMouseOut="OriginalSizeImage('picWORDPRESS')"> <!-- done -->
+                <div>
+                  
+                </div>
+          </section>
+    
+    
+          <section>
+                <h3>Web Development describes a set of skills that includes web design, creating web pages and implementing server side functionality.</h3>
+                
+                <div class="clearfix">
+                    <section>
+                    
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. 
+                       	</p>
+
+						<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on 
+                        the runway heading towards a streamlined cloud solution.
+                        </p>
+                        
+                    </section>
+                    
+                    <section>
+                    
+                    	<p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. 
+                        Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                        </p>
+
+						<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. 
+                        </p>
+                        
+                    </section>
+                </div>
+                
+                <div>
+           		  <div>
+					  <script src="js/problem5.js"></script>
+           		    <h3>Set your preferences</h3>
+                    <p>Choose Your Background Color</p>
+					 <label> Default: <input type="radio" name="bgColor" id="bgColor_default" onClick="bodyBG('white');" value="default"> </label>
+                   	<label> Blue: <input type="radio" name="bgColor" id="bgColor_1" onClick="bodyBG('blue');" value="blue"> </label>
+                    	<label>LightBlue: 	<input type="radio" name="bgColor" id="bgColor_2" onClick="bodyBG('lightblue');" value="lightblue"></label> 
+                    	<label>DarkBlue: 	<input type="radio" name="bgColor" id="bgColor_3" onClick="bodyBG('darkblue');" value="darkblue"></label> 
+                  </div>
+                </div>
+                
+            </section>
+        </div>
+        
+        <footer>
+        	<h1 class="clearfix">FOOTER
+            	<span>Copyright &copy;<script>document.write(" " + fullYear);</script></span>
+                <img src="images/instagram.jpg">           
+                <img src="images/twitter.png">
+            	<img src="images/facebook.png">
+            </h1>
+        </footer>
+
+
+	</div>
+
+</body>
+</html>

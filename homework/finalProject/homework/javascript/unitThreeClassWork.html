@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script>
+		
+		let firstName = "David"; //Global
+		let schoolName = "";
+		
+		function writeYourName(){
+			let lastName = "Huck"; //local
+			document.write(firstName + " " + lastName); //local
+			
+		}
+		
+		function displayFirstName(){
+			schoolName = "DMACC"; //global
+			
+			alert("First Name: " + firstName); // local scope
+			
+		}
+		
+		function displaySchoolName(){
+			alert("School Name: " + schoolName)
+			
+		}
+	
+	</script>
+</head>
+
+<body>
+	<h1>WDV221 Intro Javascript</h1>
+	<h2>Unit- 3 Functions</h2>
+	<h3>Local Scope and String Object</h3>
+	<p>Welcome: <script> writeYourName();</script></p>
+	<p> To write your name: <button onClick="writeYourName();">Write Your Name</button>Note: This does not work</p>
+	<p> Display name here: <button onClick="displayFirstName();">Display first name</button></p>
+	<p>Display School Name <button onClick="schoolName();">Display School Name</button></p>
+	
+</body>
+</html>

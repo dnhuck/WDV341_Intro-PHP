@@ -1,0 +1,32 @@
+/* Scss Document */
+/* Created by David Huck for Responsive Image Gallery */
+div#gallery {
+  padding: .5vw;
+  font-size: 0;
+  display: flexbox;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: box;
+  display: flex; }
+
+div#gallery div {
+  box-flex: auto;
+  flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw; }
+
+div#gallery div img {
+  width: 100%;
+  height: auto; }
+
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0; }
+
+  header {
+    padding: 0; } }
+
+/*# sourceMappingURL=photos.css.map */

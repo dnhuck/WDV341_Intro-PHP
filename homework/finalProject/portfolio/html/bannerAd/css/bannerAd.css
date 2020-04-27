@@ -1,0 +1,89 @@
+/* Scss Document */
+* {
+  box-sizing: border-box; }
+
+#frostyflake {
+  background-color: white;
+  width: 300px;
+  height: 250px;
+  border: 2px solid black;
+  padding: 8px;
+  animation: bannerAd 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  position: absolute;
+  top: 280px;
+  left: -310px; }
+
+.row {
+  display: flex; }
+
+.column {
+  flex: 50%; }
+
+@keyframes bannerAd {
+  from {
+    transform: translateX(0px);
+    background-color: white;
+    border: 2px solid black; }
+  to {
+    transform: translateX(335px);
+    background-color: white;
+    border: 2px solid black; } }
+#logo {
+  transform: translateX(0px); }
+
+#imgLogo {
+  width: 90%;
+  animation: logo 2s alternate infinite; }
+
+@keyframes logo {
+  from {
+    transform: rotateY(0deg) scale(1, 1); }
+  to {
+    transform: rotateY(360deg) scale(0.3, 0.3); } }
+#imgBowl {
+  margin: auto;
+  width: 95%;
+  animation: cereal 0.5s alternate infinite; }
+
+@keyframes cereal {
+  from {
+    transform: translateX(0px) rotateX(0deg); }
+  to {
+    transform: translateX(3px) rotateX(20deg); } }
+#scroll {
+  transform: translateX(10px);
+  animation: flash 0.5s alternate infinite; }
+
+@keyframes flash {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+#button {
+  background-color: white;
+  border: 2px solid #2809D1;
+  border-radius: 15px;
+  color: orange;
+  transform: translateX(20px);
+  transition-duration: 2s;
+  transform-origin: left;
+  margin: auto; }
+
+#button:hover {
+  background-color: orange;
+  color: white;
+  transform: scale(1.2, 1.2);
+  box-shadow: 2px 2px; }
+
+#advertisement {
+  text-align: center; }
+
+#close-btn {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  z-index: 101; }
+
+/*# sourceMappingURL=bannerAd.css.map */

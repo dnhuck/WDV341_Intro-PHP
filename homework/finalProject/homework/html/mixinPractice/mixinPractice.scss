@@ -1,0 +1,67 @@
+/* CSS Document for mixinpractice.html */
+
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+
+@mixin button1{
+	
+	background-color: maroon;
+	color: white;
+	
+}
+
+@mixin colorButton($inputColor){
+	background-color: $inputColor;
+	
+}
+
+@mixin roundedBoarder($borderRadius){
+	border-radius: $borderRadius;
+	border: 2px solid black;
+	
+}
+
+@mixin centerAlign{
+	text-align: center;
+	
+	
+}
+
+#centerButton{
+	 display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+	
+	@include button1;
+	@include roundedBoarder(25px);
+	display: inline;
+}
+
+p:nth-of-type(2) button {
+	
+	@include colorButton(blue);
+	
+}
+
+body{
+	background-color: lightcyan;
+	@include push--auto;
+}
+
+h1{
+	@include centerAlign;
+	@include roundedBoarder(25px);
+}
+
+h2,h3{
+	@include centerAlign;
+}
+

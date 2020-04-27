@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV205 Advanced CSS Layout Example</title>
+<link href="css/float.css" type="text/css" rel="stylesheet">
+<link href="scss/float.scss">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div id="container" class="center clearFloat">
+
+		<header class="clearFix">
+        	<h1><img src="images/headerImage.png" class="headImg">WebAppCo</h1>
+        </header>
+
+		<nav class="clearFix">
+			<ul id="menu">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Skills</a></li>
+				<li><a href="">Languages</a></li>
+			</ul>
+        </nav>
+
+		<div>
+            <section class="leftSide clearFloat"><!-- left hand column -->
+            	<div>
+           	  		<p class="topImage"><img src="images/wdvLarge.png"></p>
+            		<div class="imageGallery">
+                	<img src="images/html5.png">
+                    <img src="images/css3.png">
+                    <img src="images/javascript.png">
+                    <img src="images/jquery.png">
+                    <img src="images/php.jpg">
+                    <img src="images/mysql.jpg">
+                    <img src="images/wordpress.jpg">
+                	</div>
+                  
+                </div>
+          </section><!-- end of left hand column -->
+
+          <section class="rightSide"><!-- right hand column -->
+                <h3 class="h3">Web Development describes a set of skills that includes web design, creating web pages and implementing server side functionality.</h3>
+                
+                <div class="column">
+                    <section>
+                    
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. 
+                       	</p>
+
+						<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on 
+                        the runway heading towards a streamlined cloud solution.
+                        </p>
+                        
+                    </section>
+                    
+                    <section>
+                    
+                    	<p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. 
+                        Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                        </p>
+
+						<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. 
+                        </p>
+                        
+                    </section>
+                </div>
+			  	<div class="clearFloat"></div>
+                
+                <div class="form">
+               	  <form>
+					  <section class="theForm">
+                   	<h2>CONTACT US</h2>
+                    <p>
+						
+                      	<label for="floatName" class="label">NAME</label>
+                        <input type="text" name="floatName" id="floatName" class="text">
+                    </p>
+					
+					  
+					
+                    <p>	
+                      <label for="floatEmail" class="label">EMAIL</label>
+                      <input type="text" name="floatEmail" id="floatEmail" class="text">
+                    </p>
+					 
+					  
+					 
+                    <p>
+						<label for="floatMessage" class="label"><span class="positionMessage">MESSAGE</span></label>
+                      <textarea name="floatMessage" id="floatMessage" class="message"></textarea class="text">
+                    </p>
+				  
+                    <p>
+                      <input type="submit" name="button" id="button" value="Submit" class="button">
+                      <input type="reset" name="button2" id="button2" value="Reset" class="button">
+                    </p>
+                    </form>
+					  </section>
+                </div>
+                <div class="clearFloat"></div>
+            </section><!-- end of right hand column -->
+        </div>
+        
+        <footer class="clearFloat clearFix">
+        	<h1>FOOTER
+			<div class="footerImage">
+                <img src="images/instagram.jpg" class="instagram">           
+                <img src="images/twitter.png" class="twitter">
+            	<img src="images/facebook.png">
+			</div>
+			</h1>
+        </footer>
+
+	</div><!-- end of container -->
+</body>
+</html>

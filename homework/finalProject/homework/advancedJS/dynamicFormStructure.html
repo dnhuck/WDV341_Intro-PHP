@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV321 Advanced Javascript</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script>
+	
+	$(document).ready(function(){
+		
+		$("#complaints").hide();
+		$("#productIssues").hide();
+		$("#techIssues").hide();
+		
+		
+		// COMPLAINT LIST
+		let complaintList = ['Poor Customer Service', 'Hidden Information', 	'Low Quality of Product', 'Inaccessability'];
+		let complaints = complaintList.length;
+		
+		text = "<select>";
+		for (i = 0; i < complaints; i++) {
+			text += "<option>" + complaintList[i] + "</option>";
+			}
+			text += "</select>";
+			$("#complaints").html(text);
+		// END COMPLAINT LIST
+		
+		$("#contactType").change(function(){
+			let value = $(this).val();
+			
+			if(value == "C"){
+				$("#complaints").show();
+				$("#productIssues").hide();
+				$("#techIssues").hide();
+			}
+			else{
+				
+				if(value == "T"){
+					$("#complaints").hide();
+					$("#productIssues").hide();
+					$("#techIssues").show();
+					}
+				
+				else{
+					if(value == "P"){
+						$("#complaints").hide();
+						$("#productIssues").show();
+						$("#techIssues").hide();
+					}
+				}
+			}
+			
+		});
+		
+	});
+	
+</script>
+</head>
+
+<body>
+<h1>WDV321 Advanced Javascript</h1>
+<h2>Dynamic Form Structure - Assignment</h2>
+<p>Use this page as the basis for your assignment. Given the drop down list provided on this page please do the following things.</p>
+<p>
+  <label>Please Select your reason for contacting us.
+    <select name="contactType" id="contactType">
+	  <option value="choose">Choose One</option>
+      <option value="C">Complaints</option>
+      <option value="T">Technical Problems</option>
+      <option value="P">Product Issues</option>
+    </select>
+  </label>
+</p>
+<div>
+	<span id="complaints"></span>
+</div>
+	
+<div id="techIssues">
+		<label for="connectionIssue">Connection Issue</label>
+		<input type="checkbox" name="techIssue" value="connectionIssue"><br>
+		
+		<label for="noVolume">No Volume</label>
+		<input type="checkbox" value="noVolume" name="techIssue"><br>
+		
+		<label for="noCharge">Not Charging</label>
+		<input type="checkbox" value="notCharging" name="techIssue"><br>
+		
+		<label for="offUnexpectedly">Turning off Unexpectedly</label>
+		<input type="checkbox" value="offUnexpectedly" name="techIssue">
+</div>
+	
+<div id="productIssues">
+		<label for="damaged">Damaged</label>
+		<input type="radio" name="prodIssue" value="damaged"><br>
+		
+		<label for="warranty">Warranty</label>
+		<input type="radio" value="warranty" name="prodIssue"><br>
+		
+		<label for="overheat">Overheating</label>
+		<input type="radio" value="overheat" name="prodIssue"><br>
+		
+		<label for="broken">Broken</label>
+		<input type="radio" value="broken" name="prodIssue">
+</div>
+
+<ol>
+  <li>When  Complaints are selected please dynamically create and display a new drop down list that includes at least four options of your choice.</li>
+  <li>When Technical Problems are selected please dynamically create and display at least four types of problems with an associated checkbox.</li>
+  <li>When Product Issues aer selected please dynamically create and display at least four types options as a grouped set of radio buttons. </li>
+  <li>When a new option is selected your script should remove any of the dynamic content. </li>
+</ol>
+<p>&nbsp;</p>
+</body>
+</html>
+

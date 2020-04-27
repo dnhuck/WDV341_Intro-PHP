@@ -1,0 +1,18 @@
+/* Scss Document */
+#stepBro {
+  width: 200px;
+  height: 200px; }
+
+#stepBro:hover {
+  transform: rotateY(180deg) translate3d(0px, 0px, 30px) scale3d(1.2, 1.2, 3);
+  transform-origin: center; }
+
+#twentyOne {
+  width: 200px;
+  height: 200px; }
+
+#twentyOne:hover {
+  transform: scaleX(2) skewX(15deg) rotate(45deg);
+  transform-origin: left; }
+
+/*# sourceMappingURL=trans.css.map */

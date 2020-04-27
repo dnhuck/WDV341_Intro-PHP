@@ -1,0 +1,81 @@
+/* Career Styles Sheet */
+/* Created by David */
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body{
+margin-left: 5em;
+margin-right: 5em;
+}
+
+.title{
+	color: firebrick;
+	font-family: 'Pacifico', cursive;
+	font-size:200%
+	font-weight: bold;
+}
+
+/* HEADING STYLES*/
+h1,h2,h3,h4,h5,h6{
+	color: firebrick;
+	font-family: sans-serif;
+}
+
+p em{
+	color: firebrick;
+	
+}
+
+nav{
+	background-color: black;
+	line-height: 200%
+}
+
+nav li{
+	list-style: none;
+	display: inline;
+	padding-right: 40px;
+}
+
+nav a{
+	color:white;
+	font-weight: bold;
+}
+/* ALL LINKS */
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:active{
+	color: gold;
+}
+    color: firebrick;
+	font-family: sans-serif;
+}
+
+/* IMAGE PROPERTIES */
+img {
+	vertical-align: middle;
+}
+/* LIST STYLES */
+ul{
+	list-style-type: square;
+}
+
+ol{
+	list-style-type: upper-alpha;
+}
+
+li.attention{
+	color: red;
+	font-style: italic;
+}
+
+ul.check{
+	list-style-image: url(images/green_checkmark_sm.jpg)
+}
+

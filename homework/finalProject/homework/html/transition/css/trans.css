@@ -1,0 +1,38 @@
+/* Scss Document */
+#street img {
+  width: 700px; }
+
+#car {
+  transition-duration: 5s;
+  position: relative;
+  bottom: 300px;
+  left: 450px; }
+  #car img {
+    width: 250px; }
+
+#car:hover {
+  transform: translateX(-200px) scale(2, 2); }
+
+#sky img {
+  width: 700px; }
+
+#plane img {
+  width: 250px; }
+
+#thePlane {
+  transition-duration: 4s;
+  position: relative;
+  bottom: 300px;
+  left: 50px; }
+
+#thePlane:hover {
+  transform: translateX(200px) scale(3, 3); }
+
+#ball {
+  width: 150px;
+  transition-duration: 2s; }
+
+#ball:hover {
+  transform: translateX(600px) rotate(360deg); }
+
+/*# sourceMappingURL=trans.css.map */

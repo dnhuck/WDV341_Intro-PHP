@@ -1,0 +1,78 @@
+/* CSS FOR SUMMIT SITE */
+/* CREATED BY DAVID */
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body{
+	font-family: sans;
+	background-color:#36454f ;
+}
+
+p{
+	font-family: sans;
+	color:white;
+}
+
+h1{
+	text-align: center;
+	background-color: #78DAF9;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 3px;
+}
+
+h2{
+	background-color:#78DAF9;
+}
+
+h1,h2{
+	color:#36454f ;
+	line-height: 30px;
+	margin: 30px;
+	padding: 15px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #78DAF9;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+.nav li{
+	display:inline;
+	border: double;
+	border-color: blue;
+	padding: 4px;
+	margin: 50px;
+	color: #78DAF9;
+	text-decoration: none;
+}
+
+ul{
+	color:white;
+}
+
+p em{
+	text-decoration: underline red;
+}
+
+.akc{
+	color: orange;
+	text-decoration: none;
+}
+
+.img{
+	border: thin #78DAF9 solid;
+	margin: 15px;
+	padding: 10px;
+}
+
+.imagefloatleft{
+	float: right;
+	border: thin #78DAF9 solid;
+	margin: 15px;
+	padding: 10px;
+}

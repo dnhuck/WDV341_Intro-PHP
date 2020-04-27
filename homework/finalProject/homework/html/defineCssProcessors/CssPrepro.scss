@@ -1,0 +1,36 @@
+/* Scss Document */
+
+$why:lightblue;
+$pink: hotpink;
+
+
+body {
+	background-color: $why;
+}
+
+li{
+	color: indianred;
+	
+}
+
+p{
+	background-color: $pink;
+	
+}
+
+ol{
+	background-color: azure;
+	margin: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border: solid teal 2px;
+}
+
+h1{
+	text-align: center;
+	background-color: teal;
+	border: dashed black 2px;
+	padding: 3px;
+	color: black;
+	border-radius: 15px;
+}

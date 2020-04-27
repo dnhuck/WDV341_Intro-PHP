@@ -1,0 +1,13 @@
+#display{
+    margin-bottom: 10px;
+}
+
+.student{
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li{
+    list-style-type: none;
+}

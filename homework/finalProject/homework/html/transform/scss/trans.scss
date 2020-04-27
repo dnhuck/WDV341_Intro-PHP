@@ -1,0 +1,24 @@
+/* Scss Document */
+
+@mixin baseStart {
+	width: 200px;
+	height: 200px;
+}
+
+#stepBro{
+	@include baseStart;
+}
+
+#stepBro:hover{
+	transform: rotateY(180deg) translate3d(0px,0px,30px) scale3d(1.2,1.2,3);
+	transform-origin: center;
+}
+
+#twentyOne{
+	@include baseStart;
+}
+
+#twentyOne:hover{
+	transform: scaleX(2) skewX(15deg) rotate(45deg);
+	transform-origin: left;
+}

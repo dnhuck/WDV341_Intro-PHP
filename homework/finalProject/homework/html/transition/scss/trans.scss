@@ -1,0 +1,71 @@
+/* Scss Document */
+
+
+// number 1
+#street img{
+	width: 700px;
+}
+
+#car{
+	transition-duration: 5s;
+	position: relative;
+	bottom: 300px;
+	left: 450px;
+	
+	
+	img{
+	width: 250px;
+	}
+}
+
+#car:hover{
+	transform: translateX(-200px) scale(2,2);
+}
+
+// number 2
+#sky img{
+	width: 700px;
+}
+
+#plane{
+	
+	img{
+	width: 250px;
+	}
+}
+
+#thePlane{
+	transition-duration: 4s;
+	position: relative;
+	bottom: 300px;
+	left: 50px;
+}
+
+#thePlane:hover{
+	transform: translateX(200px) scale(3,3);
+}
+
+// Bowling Ball
+
+#ball{
+	width: 150px;
+	transition-duration: 2s;
+}
+
+#ball:hover{
+	transform: translateX(600px) rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

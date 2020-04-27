@@ -1,5 +1,9 @@
 <?php
 
+if(!$_SESSION['validUser'] == true){
+	header('Location: login.php');
+}
+
 //$currentDate = date("d/m/Y");
 
 	//Get the Event data from the server.

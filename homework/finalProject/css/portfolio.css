@@ -1,0 +1,21 @@
+/* Scss Document */
+/* Created By David Huck for Portfolio.html */
+h2 {
+  text-align: center; }
+
+h3 {
+  padding-top: 5px; }
+
+div#portfolio {
+  padding-left: 25px; }
+  div#portfolio li {
+    list-style-type: circle;
+    color: black;
+    margin-left: 10px; }
+  div#portfolio ul li a {
+    text-decoration: none;
+    color: black; }
+  div#portfolio ul li a:hover {
+    color: #4b77be; }
+
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,32 @@
+/* Scss Document */
+/* Created By David Huck for Portfolio.html */
+
+h2{
+	text-align: center;
+}
+
+h3{
+	padding-top: 5px;
+}
+
+div#portfolio{
+	padding-left: 25px;
+	
+	li{
+		list-style-type: circle;
+		color: black;
+		margin-left: 10px;
+	}
+	
+	ul li a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	ul li a:hover{
+		color: rgba(75, 119, 190, 1);
+	}
+}
+
+
+

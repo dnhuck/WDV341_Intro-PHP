@@ -1,0 +1,72 @@
+/* Scss Document */
+/* SCSS CREATED BY DAVID HUCK FOR contact.html */
+
+#form{
+	margin-left: 20px;
+}
+
+form{
+	padding: 5px;
+	
+	legend{
+		padding: 0px 3px;
+	}
+	
+	.name, .email{
+		width: 50%;
+	}
+	
+	.message{
+		width: 50%;
+		height: 60px;
+	}
+	
+	#buttons{
+		padding: 7px 0px;
+	}
+}
+
+#linkHeader{
+	margin-left: 5px;
+}
+
+ul#links{
+	padding-left: 25px;
+	
+	li{
+		list-style-type: circle;
+		color: black;
+		margin-left: 10px;
+	}
+	
+	li a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	li a:hover{
+		color: rgba(75, 119, 190, 1);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	
+	form{
+	
+	.name, .email{
+		width: 90%;
+		height: 30px;
+	}
+	
+	.message{
+		width: 90%;
+		height: 60px;
+	}
+	
+	#buttons{
+		padding: 7px 0px;
+	}
+}
+	
+	
+}

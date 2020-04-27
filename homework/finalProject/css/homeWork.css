@@ -1,0 +1,15 @@
+/* Scss Document */
+/* CREATED BY DAVID HUCK FOR HOMEWOORK.HTML */
+div#homeWork {
+  padding-left: 25px; }
+  div#homeWork li {
+    list-style-type: circle;
+    color: black;
+    margin-left: 10px; }
+  div#homeWork ul li a {
+    text-decoration: none;
+    color: black; }
+  div#homeWork ul li a:hover {
+    color: #4b77be; }
+
+/*# sourceMappingURL=homeWork.css.map */

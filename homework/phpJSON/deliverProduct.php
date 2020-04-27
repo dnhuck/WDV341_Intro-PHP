@@ -54,7 +54,7 @@
 	}
 
 	 // objects
-	 $productObj = new productContainer();
+	 $productObj = new ProductContainer();
 	 $productObj->set_name("PHP Textbook");
 	 $productObj->set_price("$129.95");
 	 $productObj->set_pageCount("327");

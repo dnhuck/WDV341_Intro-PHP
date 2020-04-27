@@ -1,0 +1,45 @@
+/* Scss Document */
+
+#banner{
+	animation: opace 7s;
+}
+
+@keyframes opace{
+	0%{
+		opacity: 0.2;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+
+#jumbo:hover{
+	opacity: 0.7;
+}
+
+#plane{
+	width: 30%;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	z-index: -1;
+	transform: rotate(12deg);
+	animation: plane 40s;
+}
+
+@keyframes plane{
+	0%{
+		transform: translateX(800%) rotate(12deg);
+		z-index: 1;
+	}
+	
+	50%{
+		transform: translateX(-400%) rotate(12deg);
+		z-index: 1;
+	}
+}
+
+footer{
+	background-color: lightgray;
+}

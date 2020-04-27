@@ -1,0 +1,66 @@
+/* Stylesheet for Elephant */
+/* Created by David */
+
+body{
+	background-image: url(images/grey_texture.jpg);
+	
+}
+	
+	
+	/*HEADING(S)*/
+h1{
+	background-color: black;
+	color: white;
+	padding: 18px;
+	margin: 35px;
+	
+}
+
+h2{
+	background-color: gray;
+	margin: 15px 5px;
+	padding: 10px 35px 4px;
+	
+}
+
+h3{
+	background-color: green;
+	border-bottom: dashed thick khaki;
+	border-top: dotted thick red;
+	border-width: 5px;
+	padding: 10px;
+	
+}
+
+h4{
+	background-image: url(images/green_linen.jpg);
+	padding: 10px;
+}
+
+	/*IMAGES*/
+	
+img{
+	float: right;
+	padding: 0px 0px 10px 15px;
+	margin: 10px;
+	width: 50%;
+	
+}
+
+ul.facts li{
+	background: url(images/small_elephant.jpg) no-repeat;
+	padding-left: 60px;
+	padding-bottom: 15px;
+	color: white;
+}
+
+.clear{
+	clear: both;
+	
+}
+
+
+
+p{
+
+}

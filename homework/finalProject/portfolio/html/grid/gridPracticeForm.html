@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Basic Form using CSS Grid</title>
+<style>
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+	
+body  {
+		font-family: "Helvetica", Ariel, sans-serif;
+		font-size:110%;
+		background-color:#9bd;
+		}
+form {
+
+		background-color: lightgray;
+		width: 70%;
+		margin: 10px auto;
+		padding: 1em;
+		border: 2px solid black;
+		border-radius: 15px;			
+}
+		
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 2px solid #9c9c9c;
+}
+form button {
+  background: lightblue;
+  border: 2px black solid;
+  padding: 0.7em;
+  border: 1px groove black;
+  border-radius: 5px;
+  margin: 0.7em;
+}
+form button:hover {
+  background: gold;
+}
+
+
+
+input, textarea, select  {
+		 font-size: 0.8em;
+		 border-radius: 5px;
+		 margin-top:5px;
+		 }
+  
+  
+  /* the focus selector allows a style change when a field is clicked on (in focus). In the following the input text fields change to show a gold outline when the viewer clicks in the field.*/
+
+input:focus {
+  outline: 3px solid gold;
+}
+
+
+
+
+textarea:focus {
+  outline: 3px solid gold;
+}
+
+@media (min-width: 400px) {
+  form {
+    overflow: hidden;
+  }
+
+
+
+/*the calc function is a CSS function that allows you to perform calculations to determine CSS property values. In this example, the width of the input field will be 100% of the form box up to 200pixels.*/
+  input, select {
+
+  
+
+	
+button {
+   border: 2px black solid;
+   width: 100px;
+   justify-content: center;
+ 
+  }
+}
+	
+	#gridContainer{
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+	
+
+</style>
+</head>
+<body>
+	
+        <form class="form1" action="">
+        
+        	<h3>Contact Us!</h3>
+			<p style="font-style:italic;">Send us a message. We would love to hear from you!</p>
+	
+			<div id="gridContainer">
+        	<label for="firstName" class="first-name">First Name</label>
+        	<input id="firstName" type="text">
+
+        	<label for="lastName" class="last-name">Last Name</label>
+            <input id="lastName" type="text">
+
+          	<label for="topic">Topic</label>
+			<select id="topic" name="topic">
+			 	<option value="web">Web Development Services</option>
+			 	<option value="ux_ui">UX/UI Development</option>
+			 	<option value="resume">My Resume/Credentials</option>
+			 	<option vaule="other">Other</option>
+			 	
+			 </select>
+
+        	<label for="email" class="clear">Email Address</label>
+			<input id="email" name="email" type="text" placeholder="name@anywhere.com">
+            
+            <label for="message">Message</label>
+			<textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+			</div>
+			
+			<div class="button">
+			<button class="clear">Submit</button>
+            <button>Reset</button>
+			</div>
+			
+			
+        </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

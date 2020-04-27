@@ -1,0 +1,19 @@
+{
+  "name": "mochatestvalidations",
+  "version": "1.0.0",
+  "description": "mocha test validations",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {}
+}

@@ -1,5 +1,11 @@
 <?php
 
+session_start();
+
+if(!$_SESSION['validUser'] == true){
+	header('Location: login.php');
+}
+
 try {
       
     require 'PDOConnection.php';

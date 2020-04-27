@@ -1,0 +1,195 @@
+/* Scss Document for davidhuck.net */
+/* Created by David Huck 12/14/2019 */
+
+@mixin BGC{
+	background-color: white;
+}
+
+@mixin background($bckclr){
+	background-color: $bckclr;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.heading{
+	text-align: center;
+	color: rgba(51, 110, 123, 1);
+}
+
+body{
+	@include BGC;
+}
+
+p{
+	padding: 7px;
+}
+
+ul{
+	padding: 7px;
+}
+
+.row{
+	display: flex;
+	}
+
+header{
+	@include background(rgba(34, 49, 63, 1) );
+	padding: 10px;
+
+		.column1{
+			flex: 20%;
+		}
+	
+		img#portfolioImage{
+			width: 120px;
+			border-radius: 100%;
+			margin-left: 30px;
+		}
+
+		.column2{
+			flex: 80%;
+			
+			h1{
+				color: (rgba(228, 241, 254, 1) );
+			}
+		}
+
+		nav#nav{
+			position: sticky;
+			display: flex;
+			
+				ul{
+					list-style-type: none;
+					justify-content: space-between;
+				}
+
+				li{
+					display: inline;
+					margin-right: 20px;
+				}
+
+				li a{
+					text-decoration: none;
+					color: white;
+				}
+				
+				a:hover{
+					color: rgba(75, 119, 190, 1);
+				}
+			
+				a:active{
+					color: rgba(75, 119, 190, 1);
+				}
+	}
+}
+
+main{
+	.column3{
+		flex: 50%;
+		@include background(rgba(197, 239, 247, 1) );	
+		padding: 10px;
+	}
+	
+	#hobbies{
+		margin-left: 10px;
+	}
+	
+	h1{
+		text-align: center;
+	}
+	
+	.column4{
+		flex: 50%;
+		padding: 10px;
+		ul li{
+			list-style-type: none;
+		}
+	}
+	
+	ul#skill{
+		margin-left: 15px;
+		
+		li{
+			list-style-type: circle;
+		}
+	}
+}
+
+footer{
+	@include background(rgba(34, 49, 63, 1) );
+		h4{
+			text-align: center;
+			
+			#jsYear{
+				text-decoration: none;
+			}
+		}
+	
+		h3,h4{
+			color: (rgba(228, 241, 254, 1) );
+			text-decoration: underline;
+			text-decoration-color: white;
+		}
+	
+		.column5{
+			flex: 50%;
+			text-align: center;
+			
+			ul li{
+				list-style-type: none;
+				color: white;
+			}
+		}
+	
+		.column6{
+			flex: 50%;
+			text-align: center;
+			
+			ul li{
+				list-style-type: none;
+				
+				a{
+					color: white;
+					text-decoration: none;
+				}
+				
+				a:hover{
+					color: rgba(75, 119, 190, 1);
+				}
+			}
+		}
+	
+			.column5,.column6{
+				padding-top: 12px;
+				padding-bottom: 0px;
+			}
+}
+
+// MEDIA QUERIES FOR RESPONSIVE DESIGN
+@media only screen and (max-width: 600px) {
+ 
+ .row{
+	display: block;
+	}
+	
+  main{
+	.column3{
+		width: 100%;
+		background-color: beige;	
+		padding: 10px;
+	}
+	
+	.column4{
+		width: 100%;
+		padding: 10px;
+		ul li{
+			list-style-type: none;
+		}
+	}
+	}
+	
+}

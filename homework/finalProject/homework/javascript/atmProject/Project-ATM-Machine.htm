@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV221 Intro Javascript - Calculations and Textfields</title>
+
+<style>
+
+body {background-color:#C99;
+}
+
+fieldset{
+	width:350px;
+	margin:auto;	
+}
+</style>
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Calculations and Textfields </h3>
+<h3>Create an ATM</h3>
+<p>In this project you are going to create an electronic checkbook using Javascript. You can add amounts and withdraw amounts from your current balance. </p>
+<form id="form2" name="form2" method="post" action="">
+  <fieldset>
+      <p>
+        Enter an amount: 
+        <input type="text" name="inAmt" id="inAmt"/><!-- this is where im trying to get the value from in my global variable -->
+      </p>
+      <p>
+        <input type="button" name="button3" onClick="deposit()" id="button3" value="Deposit"/>
+        <input type="button" name="button4" onClick="withdraw()" id="button4" value="Withdraw" />
+        <input type="button" name="button5" onClick="displayBalance()" id="button5" value="Display Balance" />
+      </p>
+      <p>Your Balance: <span id="balance"></span></p>
+      <p>
+        <input type="button" name="button2" onClick="reset()" id="button2" value="Reset" />
+      </p>
+  </fieldset>
+</form>
+	
+	
+<script>
+	let accountBalance = 0.0;
+	
+	function deposit(){
+		//alert("deposit()");
+		let inAmmount = parseFloat(document.querySelector("#inAmt").value.trim());
+		let val = accountBalance += inAmmount;
+		
+		if(isNaN(inAmmount) ){
+				document.querySelector("#balance").innerHTML = "Please enter a number.";
+			}
+		if(inAmmount < 0) {
+				document.querySelector("#balance").innerHTML = "Amount cannot be negative!";
+				   }
+	}
+	
+	function withdraw(){
+		let inAmmount = parseFloat(document.querySelector("#inAmt").value.trim());
+		let val = accountBalance -= inAmmount;
+		
+		if(isNaN(inAmmount) ){
+				alert("Please enter a number.");
+			}
+		if(inAmmount < 0) {
+				   alert("Amount cannot be negative.")
+				   }
+		if(val < 0){
+			alert("Cannot withdraw more than you have!")
+		}
+	}
+	
+	function displayBalance(){
+		//alert("displayBalance()");
+		let val = accountBalance;
+		let USD =  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val);
+		document.querySelector("#balance").innerHTML = USD;
+		
+		if(val == "" || isNaN(val)){
+				alert("Please enter a number.");
+			}
+		if(val < 0){
+			alert("Cannot withdraw more than you have!")
+		}
+		
+	}
+	
+	function reset(){
+		accountBalance = "";
+		document.querySelector("#inAmt").innerHTML = "";
+	}
+	
+</script>
+
+<p>Instructions:</p>
+<p>1. Create a global variable called accountBalance. Initialize it to 0. </p>
+<p>2. The amount field should follow the following rules:</p>
+<ol>
+  <li>It must be a number. If not, display an error message &quot;Please enter a number.&quot;.</li>
+  <li>The amount cannot be negative. If so, display an error message &quot;Amount cannot be negative.&quot;.</li>
+  <li>Display the updated balance.</li>
+</ol>
+<p>3. Create a deposit function that will process a deposit to the account. </p>
+<ol>
+  <li>This will add the amount entered in the Amount field to the accountBalance.</li>
+</ol>
+<p>4. Create a withdraw function that will process a withdrawl from the account.</p>
+<ol>
+  <li>The amount entered cannot be less than the balance amount. If so, display an error message &quot;Cannot withdraw more than you have!&quot;.</li>
+  <li> This will subtract the amount entered in the Amount field from the accountBalance.</li>
+  <li>Display the update balance.</li>
+</ol>
+<p>5. Create a displayBalance function that will display the current value of accountBalance in the Balance field. The balance amount displayed to the page should be formatted as currency. Call this function whenever a deposit or withdrawal is processed. Call this function from the Balance button.</p>
+<p>6. Use the combined operators for the deposit and withdraw processes. </p>
+<p>7. Use parseInt( ) or parseFloat( ) as needed.</p>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV205 Advanced CSS</title>
+
+<style>
+
+	#container	{
+		background-color:lightblue;
+		width:800px;
+		margin:auto;	
+		}
+	
+	#gridContainer{
+		display: grid;
+		grid-template-columns: 200px 1fr 1fr;
+	}
+
+	#gridContainer section{
+		background-color: teal;
+	}
+	
+	nav{
+		background-color: antiquewhite;
+	}
+	
+	nav ul{
+		display: grid;
+	    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		
+		width: 60%;
+		margin: auto;
+		
+	}
+	
+	ul li{
+		list-style-type: none;
+	} 
+	
+	li a{
+		text-decoration: none;
+	}
+
+</style>
+
+
+</head>
+
+<body>
+	<header>
+  		<h1>WDV205 Advanced CSS</h1>
+		<h3>Layout - Formatting a Navigation Bar</h3>
+  	</header>
+    
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Products</a> </li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    
+ 	<h3>Layout - Formatting Multiple Columns</h3>
+    <div id="gridContainer">
+    
+    	<section>Left Column</section>
+        <section>Center Column</section>
+        <section>Right Column</section>
+    
+    </div>
+	
+	<form>
+		
+	
+	
+	</form>
+    
+    <footer>
+    	<h3>Layout - Formatting In Line Content</h3>
+        <article>Image</article>
+        <article>Image</article>
+    </footer>
+    
+</body>
+</html>

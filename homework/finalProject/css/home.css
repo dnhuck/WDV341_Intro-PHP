@@ -1,0 +1,40 @@
+.container{
+    width: 95%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.column1 {
+    flex: 20%;
+ }
+
+ .column2{
+     flex: 80%;
+     align-content: flex-end;
+ }
+
+ #nav{
+    position: sticky;
+    display: flex; 
+    margin-top: 10px;
+}
+
+#nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+#nav li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+#nav li a {
+    text-decoration: none;
+    
+}
+

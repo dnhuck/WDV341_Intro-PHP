@@ -1,5 +1,11 @@
 <?php
 
+session_start();
+
+if(!$_SESSION['validUser'] == true){
+	header('Location: login.php');
+}
+
 require 'events.php';
 
 $msg = "";
@@ -58,7 +64,6 @@ if(isset($_POST["submit"]))
 				}
 	
 	}else{
-		echo "<h1>Please enter your information</h1>";
 		}
 ?>
 <!doctype html>
@@ -225,9 +230,12 @@ if(isset($_POST["submit"]))
             
             <?php
                 }
-                //$eventDate = $sql['event_date'];
             ?>
 
+        </div>
+
+        <div id="logout">
+                <a href="logout.php">Logout</a>
         </div>
 	</div>
 </body>

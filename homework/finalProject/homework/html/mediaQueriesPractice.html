@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WDV205 Media Query Sample Page</title>
+
+<style>
+	#container	{
+		width:980px;
+		margin: auto auto;	
+	}
+
+	.leftSide	{
+		width:30%;
+		float:left;
+		background-color:red;	
+	}
+
+	.centerSection	{
+		width:50%;
+		float:left;
+		background-color:limegreen;	
+	}
+
+
+	.rightSide	{
+		width:20%;
+		float:right;
+		background-color:lightblue;	
+	}
+		
+	.clearFix::after {
+	  content: "";
+	  clear: both;
+	  display: table; 
+	}
+	
+	@media screen and (max-width: 800px){
+		body{
+			background-color: blue;	}
+		
+		.leftSide{float:left; width: 50%; background-color: red;}
+		
+		.centerSection{}
+		
+		.rightSide{
+		float:none;
+		clear: both;
+		background-color:lightblue;	
+		width:100%;}
+
+	}
+
+</style>
+
+
+
+</head>
+
+<body>
+	<div id="container">
+    
+    
+    <header>
+    	<h1>Header</h1>
+    </header>
+    
+    <div class="clearFix">
+    
+    	<section class="leftSide">
+        
+        	<h1>Left Section</h1>
+        	<p>This column should be 50% width when less than 800pxl</p>
+        	<p>This column should be 100% width with less than 400px. It should be below the Center section.</p>
+        
+        </section>
+    
+   	  <section class="centerSection">
+        
+        	<h1>Center Section        </h1>
+        	<p>This column should be 50% width when less than 800px.</p>
+        	<p>This column should be 100% width when less than 400px. It should be on top.</p>
+   	  </section>    
+    
+    	<section class="rightSide">
+        
+        	<h1>Right Section</h1>
+       	  <p>This column should be below Left &amp; Center when less than 800px. It should be 100%</p>
+       	  <p>Remove This column at less than 400px;</p>
+        
+        </section>
+    
+    
+    </div>
+    
+    
+    <footer>
+    
+    	<h1>Footer</h1>
+    
+    </footer>
+    
+    
+    </div>
+</body>
+</html>
+

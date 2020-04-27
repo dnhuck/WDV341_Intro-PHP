@@ -1,5 +1,11 @@
 <?php
 
+session_start();
+
+if(!$_SESSION['validUser'] == true){
+	header('Location: login.php');
+}
+
 	require 'PDOConnection.php'; // access and run this external file
 
 try{
@@ -48,6 +54,5 @@ $conn = null; // close your connection object
 </head>
 
 <body>
-	<h2>Thank you for submitting!</h2>
 </body>
 </html>

@@ -1,0 +1,30 @@
+/* CSS Document for mixinpractice.html */
+#centerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+button {
+  background-color: maroon;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid black;
+  display: inline; }
+
+p:nth-of-type(2) button {
+  background-color: blue; }
+
+body {
+  background-color: lightcyan;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1 {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid black; }
+
+h2, h3 {
+  text-align: center; }
+
+/*# sourceMappingURL=mixinPractice.css.map */
