@@ -27,7 +27,7 @@ try {
     //Prepared statement result will deliver an associative array
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
-    echo 'Success';
+   echo "<script>alert('Update Successfull!')</script>";
    header("refresh: 1; url=validUser.php");
     
 }

@@ -4,9 +4,9 @@
 // Include this file into your application as needed.
 
 $serverName = 'localhost'; 	// the usual default name
-$username = 'root'; 	//username of database
-$password = ''; 	//password of database
-$database = 'wdv341'; 	// name of database you will be accessing
+$username = 'dnhuck_wdv341'; 	//username of database
+$password = '4913Sharon!'; 	//password of database
+$database = 'dnhuck_wdv341'; 	// name of database you will be accessing
 
 try {
     $conn = new PDO("mysql:host=$serverName;dbname=$database", $username, $password);

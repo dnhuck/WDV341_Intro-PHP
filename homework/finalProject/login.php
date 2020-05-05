@@ -117,6 +117,9 @@ if(isset($_POST["submit"]))
                 <input type="reset" name="reset" id="reset" value="Reset">
             </div>
         </form>
+        <div>
+            <a href="index.html">Return to Homepage</a>
+        </div>
 	</div>
 </body>
 </html>

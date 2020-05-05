@@ -46,7 +46,8 @@ if(isset($_POST["submit"]))
 		if($validForm){
 			
                 require('PDOConnection.php');
-                //echo '<script>alert("valid")</script>';
+                echo "<script>alert('Picture Added Successfully!')</script>";
+                header('Refresh: 1; Location: http://davidhuck.net/homework/php/finalProject/validUser.php');
 			
 			} else{
 			
@@ -80,7 +81,7 @@ if(isset($_POST["submit"]))
         
         <form method="POST" action="validUser.php" enctype="multipart/form-data">
             <input type="hidden" name="size" value="1000000">
-            <h1>Add Event:</h1>
+            <h1>Add A Picture:</h1>
             <div id="column">
                 <div id="row1">
                     <p>
@@ -131,7 +132,7 @@ if(isset($_POST["submit"]))
                 while( $row=$stmt->fetch(PDO::FETCH_ASSOC)) {
             ?>
 	        <p>
-                <div class="eventBlock">
+                
                     	
                         <figure>
                             <h3>ID: <?php echo $row['pic_id']; ?></h3>
@@ -141,6 +142,7 @@ if(isset($_POST["submit"]))
                             <p>Locaton: <?php echo $row['pic_location']; ?></p>
                             <p>Date Taken: <?php echo $row['date_taken']; ?></p>
                             <div id="updateDatabase">
+                                <h3>Update Picture</h3>
                                 <form action="update.php" method="post" id="updateDB">
                                         <div id="column">
                                             <div id="row1">
@@ -183,8 +185,6 @@ if(isset($_POST["submit"]))
                     
                             <p><a href="delete.php?id=<?php echo $row['pic_id']; ?>">Delete</a></p>
                         </figure>
-                    </div>
-                </div>
             </p>
             
             <?php
@@ -194,7 +194,12 @@ if(isset($_POST["submit"]))
         </div>
 
         <div id="logout">
+            <p>
                 <a href="logout.php">Logout</a>
+            </p>
+            <p>
+                <a href="index.html">Return to Homepage</a>
+            </p>
         </div>
 	</div>
 </body>

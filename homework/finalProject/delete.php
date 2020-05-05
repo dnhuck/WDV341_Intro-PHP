@@ -26,7 +26,8 @@ try {
     
     //Prepared statement result will deliver an associative array
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    
+
+    echo "<script>alert('Delete Successfull!')</script>";
     header("refresh:1; url=validUser.php");
 }
 
